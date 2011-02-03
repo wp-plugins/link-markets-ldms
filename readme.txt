@@ -1,13 +1,13 @@
 === Link Market's LDMS ===
 Contributors: Link Market Team
 Tags: link market, linkmarket, link building, link exchange, link directory, ldms, link trade
-Requires at least: 2.7.2
+Requires at least: 2.1 or higher
 Tested up to: 3.0.4
 Stable tag: 1.0.1
 
 == Description ==
 
-The Link Market's LDMS (Link Directory Management Service) plug-in will manage all the links that have been traded through LinkMarket.com website.
+The Link Market's LDMS (Link Directory Management Service) plug-in will manage all the links that have been traded through http://www.linkmarket.com/ website.
 
 
 = Features =
@@ -31,13 +31,20 @@ Follow the steps below to install the plugin.
 4. Create new page (My Link Page) and add the text [linkmarketldms] in the text box
 5. In the new page that was just created add a new custom field:
 	- Name: ldmskey
-	- Value: is on the Edit Link Directory Management Service page when you login to www.linkmarket.com
+	- Value: is on the Edit Link Directory Management Service page when you login to http://www.linkmarket.com/
 6. On the Edit Link Directory Management Service page, update the URL to the your link page to the url of the new page that was just created 
 
 
-== Help ==
+== Frequently Asked Questions ==
 
 For help and support please refer to the Link Market's help section at <a href="http://www.linkmarket.com/customer_center/index.php?action=show&cat=16">Link Directory Management Service</a>.
+
+
+== Screenshots ==
+
+1. Example of LDMS on your webpage
+2. Where to add the text [linkmarketldms]
+3. Where to add custom field
 
 == Changelog ==
 
