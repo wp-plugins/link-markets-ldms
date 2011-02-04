@@ -7,7 +7,7 @@ Stable tag: 1.0.1
 
 == Description ==
 
-The Link Market's LDMS (Link Directory Management Service) plug-in will manage all the links that have been traded through http://www.linkmarket.com/ website.
+The Link Market's LDMS (Link Directory Management Service) plug-in will manage all the links that have been traded through LinkMarket.com website.
 
 
 = Features =
@@ -25,16 +25,14 @@ The Link Market's LDMS (Link Directory Management Service) plug-in will manage a
 
 Follow the steps below to install the plugin.
 
-The automatic plugin installer should work for most people. Manual installation is easy and takes fewer than five minutes.
-
-
-1. Upload Link Market's LMDS plugin to the /wp-content/plugins/ directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Create new page (My Link Page) and add the text [linkmarketldms] in the text box
-4. In the new page that was just created add a new custom field:
+1. To download plugin please, click here .
+2. Upload Link Market's LMDS plugin to the /wp-content/plugins/ directory
+3. Activate the plugin through the 'Plugins' menu in WordPress
+4. Create new page (My Link Page) and add the text [linkmarketldms] in the text box
+5. In the new page that was just created add a new custom field:
 	- Name: ldmskey
-	- Value: is on the Edit Link Directory Management Service page when you login to http://www.linkmarket.com/
-5. On the Edit Link Directory Management Service page, update the URL to the your link page to the url of the new page that was just created 
+	- Value: is on the Edit Link Directory Management Service page when you login to www.linkmarket.com
+6. On the Edit Link Directory Management Service page, update the URL to the your link page to the url of the new page that was just created 
 
 
 == Frequently Asked Questions ==
@@ -52,8 +50,9 @@ For help and support please refer to the Link Market's help section at <a href="
 
 = 1.0.1 =
 
-* Inital Lunch of the plugin
+* Inital launch of the plugin
 
 = 1.0.2 =
 
 * Added strpos test to reduce unnecessary calls to www.linkmarket.com
+
