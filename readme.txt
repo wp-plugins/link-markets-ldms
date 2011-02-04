@@ -54,3 +54,6 @@ For help and support please refer to the Link Market's help section at <a href="
 
 * Inital Lunch of the plugin
 
+= 1.0.2 =
+
+* Added strpos test to reduce unnecessary calls to www.linkmarket.com

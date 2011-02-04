@@ -30,19 +30,25 @@ License: A "Slug" license name e.g. GPL2
 
 function GetLDMS($text)
 {
-	$mykey_values = get_post_custom_values('ldmskey');
 	
-	if(trim($mykey_values[0]) =="")
+	$ldmstag = '[linkmarketldms]';
+	
+	if(strpos($text, $ldmstag) !== false)
 	{
-		$ldms_html_code ="<hr /><b>Warning: LDMS Key is not valid!</b><hr />";
+		$mykey_values = get_post_custom_values('ldmskey');
+		
+		if(trim($mykey_values[0]) == "")
+		{
+			$ldms_html_code ="<hr /><b>Warning: The LDMS Key is not valid!</b><hr />";
+		}
+		
+		$url = "http://api.linkmarket.com/mng_dir/get_links.php?user_id=".trim($mykey_values[0])."&cid=".$_GET['cid']."&start=".$_GET['start']."";
+		
+		$ldms_html_code .= GetLDMSHtmlCode($url);	
+		
+		$text = str_replace($ldmstag,$ldms_html_code, $text);
 	}
 	
-	$url = "http://api.linkmarket.com/mng_dir/get_links.php?user_id=".trim($mykey_values[0])."&cid=".$_GET['cid']."&start=".$_GET['start']."";
-		
-	$ldms_html_code .= GetLDMSHtmlCode($url);	
-	
-	$text = str_replace('[linkmarketldms]',$ldms_html_code, $text);
-			
 	return $text;
 }
 
@@ -51,11 +57,14 @@ function GetLDMSHtmlCode($url)
 	$buffer = ""; 
 	$urlArr = parse_url($url);
 	if($urlArr[query])
-		{$urlArr[query] = "?".$urlArr[query];}
+	{
+		$urlArr[query] = "?".$urlArr[query];
+	}
+	
 	$fp = fsockopen($urlArr[host], 80, $errno, $errstr, 30);
 	if (!$fp)
 	{
-		echo "$errstr ($errno)<br />\n";
+		echo "$errstr ($errno)<br />";
 	}
 	else
 	{
@@ -71,6 +80,7 @@ function GetLDMSHtmlCode($url)
 	}
 	
 	$buffer = strstr($buffer,"\r\n\r\n");
+	
 	return $buffer;
 }
 
