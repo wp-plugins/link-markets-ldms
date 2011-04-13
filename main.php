@@ -3,7 +3,7 @@
 Plugin Name: Link Market's LDMS
 Plugin URI: http://www.linkmarket.com/customer_center/index.php?action=show&cat=16
 Description: The Link Market's LDMS (Link Directory Management Service) plug-in will manage all the links that have been traded through LinkMarket.com websites. 
-Version: The Plugin's Version Number, e.g.: 1.0.2
+Version: 1.0.2
 Author: Link Market Team
 Author URI: http://www.linkmarket.com/
 License: A "Slug" license name e.g. GPL2
