@@ -2,7 +2,7 @@
 Contributors: Link Market Team
 Tags: link market, linkmarket, link building, link exchange, link directory, ldms, link trade
 Requires at least: 2.1 or higher
-Tested up to: 3.0.4
+Tested up to: 3.5.1
 Stable tag: 1.0.2
 
 == Description ==
